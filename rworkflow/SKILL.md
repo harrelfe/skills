@@ -3,21 +3,16 @@ name: rworkflow
 description: >
   Frank Harrell's R Workflow for reproducible data analysis and reporting
   (hbiostat.org/rflow). Use this skill whenever the user asks about or pastes
-  code involving: analysis file creation, data import, annotating variables,
-  data dictionaries, variable labels/units, Hmisc functions (describe, label,
-  units, upData, csv.get, getHdata, contents, hlab, hlabs, vlab, Cs, summarize,
-  summary.formula, wtd.*, rcorr, varclus, naclus, missChk, multDataOverview),
-  data.table operations (DT[i,j,by], :=, fcase, melt, dcast, setkey, let,
-  rbindlist, uniqueN), qreport functions (hookaddcap, makecnote, maketabs),
-  ggplot2 graphics for exploratory or descriptive analysis, Quarto document
-  setup and rendering, descriptive statistics workflows, missing data patterns,
-  data overview, caching with targets or knitr, parallel computing with
-  future/parallel, simulation in R, or reproducible research reporting.
-  Also trigger when the user asks for help reviewing R code using any of these
-  packages or idioms, or when they ask how to do something in R that touches
-  data preparation, annotation, description, or report generation. This skill
-  encodes Harrell's specific philosophy and idioms — do not rely on general R
-  knowledge when this skill is available.
+  R code involving Hmisc-based data annotation and description, data.table
+  manipulation, qreport-based reporting, ggplot2 exploratory/descriptive
+  graphics, Quarto document setup, caching, parallel computing, or simulation
+  for reproducible research. See "Function & Topic Triggers" below for the
+  specific function names and idioms this covers. Also trigger when the user
+  asks for help reviewing R code using any of these packages or idioms, or
+  asks how to do something in R involving data preparation, annotation,
+  description, or report generation. This skill encodes Harrell's specific
+  philosophy and idioms — do not rely on general R knowledge when this skill
+  is available.
 ---
 
 # R Workflow Skill (Harrell)
@@ -25,6 +20,18 @@ description: >
 Primary reference: **hbiostat.org/rflow** (book by Frank E. Harrell Jr., updated March 2026).  
 Companion books: [BBR](https://hbiostat.org/bbr) (statistical inference), [RMS](https://hbiostat.org/rms) (regression modeling).  
 Templates/scripts: https://github.com/harrelfe/rscripts
+
+---
+
+## Function & Topic Triggers
+
+Use this skill whenever code or a question touches any of the following:
+
+- **Analysis file / import:** analysis file creation, data import, annotating variables, data dictionaries, variable labels/units.
+- **Hmisc functions:** `describe`, `label`, `units`, `upData`, `csv.get`, `getHdata`, `contents`, `hlab`, `hlabs`, `vlab`, `Cs`, `summarize`, `summary.formula`, `wtd.*`, `rcorr`, `varclus`, `naclus`, `missChk`, `multDataOverview`.
+- **data.table operations:** `DT[i,j,by]`, `:=`, `fcase`, `melt`, `dcast`, `setkey`, `let`, `rbindlist`, `uniqueN`.
+- **qreport functions:** `hookaddcap`, `makecnote`, `maketabs`.
+- **Other topics:** ggplot2 graphics for exploratory/descriptive analysis, Quarto document setup and rendering, descriptive statistics workflows, missing data patterns, data overview, caching with targets or knitr, parallel computing with future/parallel, simulation in R, reproducible research reporting.
 
 ---
 
